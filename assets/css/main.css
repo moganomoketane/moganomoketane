@@ -2161,86 +2161,24 @@ h1 + p {
 
 /* Section/Article */
 
-/* === Qualifications Section with Background Image === */
-
-#qualifications {
-    padding: 6em 2em;
-    text-align: center;
-    background: url("images/pic04.jpg") no-repeat center center/cover;
-    position: relative;
-    color: #fff; /* default white text for contrast */
-}
-
-/* Overlay effect for readability */
-#qualifications::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55); /* dark overlay */
-    z-index: 1;
-}
-
-#qualifications h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #0da748; /* keep your green accent for headings */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
+/* Position arrow at the bottom of the section */
+.next-arrow-wrapper {
+    margin-top: 2em;        /* spacing after the list */
+    text-align: center;      /* center the arrow */
     position: relative;
     z-index: 2;
 }
 
-/* Grid layout styled like Expertise section */
-.qualifications-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2em;
-    padding: 0;
-    margin: 2em auto 0 auto;
-    max-width: 900px;
-    list-style: none;
-    position: relative;
-    z-index: 2;
-}
-
-.qualifications-list li {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 2em 1.5em;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+/* Optional: keep the arrow visible over background if using image */
+.goto-next.scrolly {
+    display: inline-block;
+    color: #0da748;          /* green accent */
+    font-size: 1.5em;
     transition: transform 0.2s ease;
-    text-align: center;
-    backdrop-filter: blur(4px); /* glassy effect */
 }
 
-.qualifications-list li:hover {
-    transform: translateY(-5px);
-}
-
-.qualifications-list .icon {
-    font-size: 2.2em;
-    color: #0da748;
-    margin-bottom: 0.8em;
-    display: block;
-}
-
-.qualification-details h3 {
-    font-size: 1.1em;
-    font-weight: 500;
-    color: #fff; /* white text on dark bg */
-    margin: 0 0 0.5em 0;
-    font-family: "Raleway", sans-serif;
-}
-
-.qualification-details p {
-    font-size: 0.9em;
-    color: #ddd; /* softer white for subtext */
-    margin: 0;
-    font-style: italic;
+.goto-next.scrolly:hover {
+    transform: translateY(-3px);
 }
 
 
