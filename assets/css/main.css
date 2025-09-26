@@ -2161,56 +2161,124 @@ h1 + p {
 
 /* Section/Article */
 
-	section.special, article.special {
-		text-align: center;
-	}
+	/* === Existing Section & Header Styles === */
+section.special, article.special {
+    text-align: center;
+}
 
-	header p {
-		color: #a8b0b3;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
-	}
+header p {
+    color: #a8b0b3;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
 
-	header h1 + p {
-		margin-top: -1em;
-	}
+header h1 + p {
+    margin-top: -1em;
+}
 
-	header h2 + p {
-		margin-top: -1em;
-	}
+header h2 + p {
+    margin-top: -1em;
+}
 
-	header h3 + p {
-		margin-top: -0.8em;
-	}
+header h3 + p {
+    margin-top: -0.8em;
+}
 
-	header h4 + p,
-	header h5 + p,
-	header h6 + p {
-		font-size: 0.8em;
-		margin-top: -0.6em;
-	}
+header h4 + p,
+header h5 + p,
+header h6 + p {
+    font-size: 0.8em;
+    margin-top: -0.6em;
+}
 
-	header.major {
-		text-align: center;
-	}
+header.major {
+    text-align: center;
+}
 
-		header.major h1, header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
-			position: relative;
-		}
+header.major h1,
+header.major h2,
+header.major h3,
+header.major h4,
+header.major h5,
+header.major h6 {
+    position: relative;
+}
 
-			header.major h1:after, header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
-				background: #dddddd;
-				content: '';
-				display: block;
-				height: 2px;
-				margin: 0.75em auto 0 auto;
-				position: relative;
-				width: 4em;
-			}
+header.major h1:after,
+header.major h2:after,
+header.major h3:after,
+header.major h4:after,
+header.major h5:after,
+header.major h6:after {
+    background: #dddddd;
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 0.75em auto 0 auto;
+    position: relative;
+    width: 4em;
+}
 
-		header.major p {
-			margin-top: 0;
-		}
+header.major p {
+    margin-top: 0;
+}
+
+/* === Qualifications Section === */
+#qualifications {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+#qualifications h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #0da748; /* highlight green to match theme */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.qualifications-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.qualifications-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    text-align: left;
+}
+
+.qualifications-list li:hover {
+    transform: translateY(-5px);
+}
+
+.qualifications-list .icon {
+    font-size: 1.8em;
+    color: #0da748;
+}
+
+.qualification-details h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 0 0.3em 0;
+}
+
+.qualification-details p {
+    font-size: 0.95em;
+    color: #666;
+    margin: 0;
+}
+
 		
 
 /* Form */
