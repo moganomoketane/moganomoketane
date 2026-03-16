@@ -29,6 +29,28 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+/* Top right CV & LinkedIn icons */
+
+.top-icons {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+}
+
+.top-icons a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.top-icons a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
 body {
 	line-height: 1;
 }
